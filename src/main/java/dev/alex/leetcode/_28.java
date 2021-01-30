@@ -1,16 +1,6 @@
 package dev.alex.leetcode;
 
 public class _28 {
-    public static void main(String[] args) {
-        _28 instance = new _28();
-        System.out.println(instance.strStr("", ""));
-        System.out.println(instance.strStr("a", "a"));
-        System.out.println(instance.strStr("hello", "ll"));
-        System.out.println(instance.strStr("hello", "lo"));
-        System.out.println(instance.strStr("hello", "app"));
-        System.out.println(instance.strStr("hello", "finally"));
-    }
-
     public int strStr(String haystack, String needle) {
         int result = -1;
         if (needle.length() == 0) {
