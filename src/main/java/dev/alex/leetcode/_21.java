@@ -1,33 +1,8 @@
 package dev.alex.leetcode;
 
+import dev.alex.leetcode.entity.ListNode;
+
 import java.util.Objects;
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode() {
-    }
-
-    ListNode(int val) {
-        this.val = val;
-    }
-
-    ListNode(int val, ListNode next) {
-        this.val = val;
-        this.next = next;
-    }
-
-    @Override
-    public String toString() {
-        return String.valueOf(val) + ", next => " + (Objects.nonNull(next) ? next.val : "null");
-    }
-
-    @Override
-    public int hashCode() {
-        return this.toString().hashCode();
-    }
-}
 
 public class _21 {
     public ListNode mergeTwoLists(ListNode list1, ListNode list2) {

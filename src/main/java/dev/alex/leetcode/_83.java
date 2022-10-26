@@ -1,7 +1,7 @@
 package dev.alex.leetcode;
 
 
-import com.google.gson.Gson;
+import dev.alex.leetcode.entity.ListNode;
 
 import java.util.Objects;
 
