@@ -1,8 +1,13 @@
 package dev.alex.leetcode;
 
 import com.google.gson.Gson;
+import dev.alex.leetcode.entity.TreeNode;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Objects;
+import java.util.Queue;
 import java.util.stream.Collectors;
 
 public class _449 {
@@ -71,12 +76,3 @@ public class _449 {
     }
 }
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int x) {
-        val = x;
-    }
-}

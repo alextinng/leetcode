@@ -1,5 +1,6 @@
 package dev.alex.leetcode;
 
+import dev.alex.leetcode.entity.TreeNode;
 import org.junit.Before;
 import org.junit.Test;
 
