@@ -1,4 +1,4 @@
-package dev.alex.leetcode;
+package dev.alex.leetcode.solution;
 
 import com.google.gson.Gson;
 import dev.alex.leetcode.entity.TreeNode;
