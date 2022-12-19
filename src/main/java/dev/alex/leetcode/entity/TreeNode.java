@@ -1,7 +1,7 @@
 package dev.alex.leetcode.entity;
 
 public class TreeNode {
-    public final int val;
+    public int val;
     public TreeNode left;
     public TreeNode right;
 
