@@ -19,26 +19,26 @@ public class _77Test {
     public void combine() {
         System.out.println("case (1,1): ");
         List<List<Integer>> list = instance.combine(1, 1);
-        System.out.println(list);
+        System.out.println("result: " + list);
 
         System.out.println("case (2,1): ");
         list = instance.combine(2,1);
-        System.out.println(list);
+        System.out.println("result: " + list);
 
         System.out.println("case (2,2): ");
         list = instance.combine(2,2);
-        System.out.println(list);
+        System.out.println("result: " + list);
 
         System.out.println("case (3,1): ");
         list = instance.combine(3,1);
-        System.out.println(list);
+        System.out.println("result: " + list);
 
         System.out.println("case (3,2): ");
         list = instance.combine(3,2);
-        System.out.println(list);
+        System.out.println("result: " + list);
 
         System.out.println("case (3,3): ");
         list = instance.combine(3,3);
-        System.out.println(list);
+        System.out.println("result: " + list);
     }
 }
