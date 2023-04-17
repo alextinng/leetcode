@@ -1,12 +1,35 @@
 package dev.alex.leetcode.solution;
 
+import java.util.LinkedHashMap;
+import java.util.Map;
+
 public class _219 {
+    static class FixedSizeLinkedHashMap<K, V> extends LinkedHashMap<K, V> {
+        private int capacity;
+
+        public FixedSizeLinkedHashMap(int capacity) {
+            super();
+            this.capacity = capacity;
+        }
+
+        public boolean removeEldestEntry(Map.Entry<K, V> eldest) {
+            return size() > capacity;
+        }
+    }
+
     public boolean containsNearbyDuplicate(int[] nums, int k) {
         if (0 == k) return false;
+        if (k > nums.length) k = nums.length;
 
-        for (int x = 0; x < nums.length; x++) {
-            for (int y = x + 1; y < nums.length && y - x <= k; y++) {
-                if (nums[x] == nums[y]) return true;
+        Map<Integer, Object> dict = new FixedSizeLinkedHashMap<>(k);
+
+        for (int i = 0; i < nums.length; i++) {
+            if (dict.containsKey(nums[i])) {
+                return true;
+            } else {
+                dict.put(nums[i], 0);
+
+                System.out.println("dict: " + dict.toString());
             }
         }
 

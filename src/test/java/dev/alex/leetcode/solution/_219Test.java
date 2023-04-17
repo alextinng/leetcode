@@ -13,6 +13,9 @@ public class _219Test {
     }
     @Test
     public void testContainsNearbyDuplicate() {
+        Assert.assertTrue(instance.containsNearbyDuplicate(new int[] {1,0,1,1}, 1));
+        Assert.assertFalse(instance.containsNearbyDuplicate(new int[] {1,2,3,1,2,3},
+                2));
         Assert.assertTrue(instance.containsNearbyDuplicate(new int[] {0,1,2,3,2,5}, 3));
     }
 }
