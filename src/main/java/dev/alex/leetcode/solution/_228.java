@@ -45,4 +45,34 @@ public class _228 {
 
         return result;
     }
+
+    public List<String> solution2(int[] nums) {
+        List<String> result = new ArrayList<>();
+        if (nums.length > 0) {
+            if (nums.length == 1) {
+                result.add(Integer.toString(nums[0]));
+            } else {
+                // 快慢指针
+                int slow = 0, fast = 0;
+                while (fast < nums.length) {
+                    if (fast + 1 == nums.length || nums[fast + 1] > nums[fast] + 1) {
+                        // 窗口不连续或到达最后一位
+                        if (slow == fast) {
+                            result.add(Integer.toString(nums[slow]));
+                        } else {
+                            result.add(String.format("%d->%d", nums[slow], nums[fast]));
+                        }
+
+                        slow = fast + 1;
+                        fast = slow;
+                    } else {
+                        // 窗口连续
+                        fast++;
+                    }
+                }
+            }
+        }
+
+        return result;
+    }
 }

@@ -13,19 +13,19 @@ public class _228Test extends TestCase {
     }
 
     public void testSummaryRanges() {
-        List<String> strings = instance.summaryRanges(new int[]{2});
+        List<String> strings = instance.solution2(new int[]{2});
         System.out.println(strings);
 
-        strings = instance.summaryRanges(new int[]{2, 3});
+        strings = instance.solution2(new int[]{2, 3});
         System.out.println(strings);
 
-        strings = instance.summaryRanges(new int[]{2, 4});
+        strings = instance.solution2(new int[]{2, 4});
         System.out.println(strings);
 
-        strings = instance.summaryRanges(new int[]{0, 1, 2, 3, 5, 9, 10});
+        strings = instance.solution2(new int[]{0, 1, 2, 3, 5, 9, 10});
         System.out.println(strings);
 
-        strings = instance.summaryRanges(new int[]{-2147483648, -2147483647, 2147483647});
+        strings = instance.solution2(new int[]{-2147483648, -2147483647, 2147483647});
         System.out.println(strings);
     }
 }
